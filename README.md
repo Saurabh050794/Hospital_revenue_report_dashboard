@@ -1,10 +1,10 @@
-# 🏥 Hospital Revenue & Profitability Analytics
+# Hospital Revenue & Profitability Analytics
 
 A end-to-end **SQL + Power BI** project that analyzes hospital revenue, department performance, and payment behavior using real-world style data.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project helps hospital management understand:
 - Where is revenue coming from?
@@ -14,7 +14,7 @@ This project helps hospital management understand:
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 hospital-revenue-analytics/
@@ -37,7 +37,7 @@ hospital-revenue-analytics/
 
 ---
 
-## 🗃️ Database: `hospital_revenue_db`
+##  Database: `hospital_revenue_db`
 
 ### Tables
 
@@ -60,7 +60,7 @@ patient_insurance → insurance_provider (insurance_provider_id)
 
 ---
 
-## 🔑 Core SQL — `revenue_analysis` View
+##  Core SQL — `revenue_analysis` View
 
 ```sql
 CREATE VIEW revenue_analysis AS
@@ -124,7 +124,7 @@ GROUP BY
 
 ---
 
-## 🧮 DAX Measures
+##  DAX Measures
 
 ```dax
 Total Revenue = SUM(revenue_analysis[total_revenue])
@@ -163,7 +163,7 @@ CALCULATE(SUM(revenue_analysis[total_revenue]),
 
 ---
 
-## 🛠️ Tools Used
+##  Tools Used
 
 | Tool | Purpose |
 |------|---------|
@@ -174,7 +174,7 @@ CALCULATE(SUM(revenue_analysis[total_revenue]),
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### SQL Setup
 1. Open MySQL Workbench
